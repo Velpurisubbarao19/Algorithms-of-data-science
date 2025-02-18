@@ -47,20 +47,27 @@ if __name__ == "__main__":
     os.makedirs(desktop_path, exist_ok=True)
     csv_file_path = os.path.join(desktop_path, "deliverable.csv")
 
-    sample_prompts = [
-        "What are the symptoms of flu?", "How to bake a chocolate cake?",
-        "Tell me about the history of Ancient Rome.", "What are the side effects of ibuprofen?"
-    ]
-    sample_urls = [
-        "https://www.bbc.com/news", "https://www.nytimes.com",
-        "https://www.nature.com", "https://www.who.int/health-topics/coronavirus"
+    new_prompts = [
+        "What are the benefits of a balanced diet?", "How does machine learning work?",
+        "Tips for improving sleep quality?", "What are the effects of climate change?",
+        "How to start investing in stocks?", "Explain Newton’s laws of motion.",
+        "What are the advantages of electric cars?", "How to improve time management skills?",
+        "What are some easy yoga poses for beginners?", "Tell me about the history of Ancient Greece."
     ]
 
-    num_rows = min(4, len(sample_prompts), len(sample_urls))
+    new_urls = [
+        "https://www.nasa.gov/mars-missions", "https://www.foodnetwork.com/best-desserts",
+        "https://www.worldbank.org/economic-growth", "https://www.fifa.com/world-cup-history",
+        "https://www.nobelprize.org/physics", "https://www.who.int/mental-health",
+        "https://www.medicalnewstoday.com/heart-health", "https://www.techcrunch.com/startups",
+        "https://www.bbc.com/history-world-war", "https://www.cnn.com/latest-tech"
+    ]
+
+    num_rows = min(len(new_prompts), len(new_urls))
     new_data = {
-        "user_prompt": sample_prompts[:num_rows],
-        "url_to_check": sample_urls[:num_rows],
-        "func_rating": [validator.rate_url_validity(prompt, url).get("Final Validity Score", 0) for prompt, url in zip(sample_prompts[:num_rows], sample_urls[:num_rows])],
+        "user_prompt": new_prompts,
+        "url_to_check": new_urls,
+        "func_rating": [validator.rate_url_validity(prompt, url).get("Final Validity Score", 0) for prompt, url in zip(new_prompts, new_urls)],
         "custom_rating": [random.randint(1, 5) for _ in range(num_rows)]
     }
 
