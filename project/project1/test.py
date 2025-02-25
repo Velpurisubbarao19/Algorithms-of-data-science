@@ -18,18 +18,28 @@ def calculate_score(content_relevance: int, bias_score: int) -> int:
 # Dataset
 data = {
     "user_prompt": [
-        "What are the benefits of a balanced diet?", "How does machine learning work?",
-        "Tips for improving sleep quality?", "What are the effects of climate change?",
-        "How to start investing in stocks?", "Explain Newton’s laws of motion.",
-        "What are the advantages of electric cars?", "How to improve time management skills?",
-        "What are some easy yoga poses for beginners?", "Tell me about the history of Ancient Greece."
+         "What are the benefits of a plant-based diet?",
+         "How does quantum computing work?",
+         "What are the causes of climate change?",
+         "Explain the basics of blockchain technology.",
+         "How can I learn a new language quickly?",
+         "What are the symptoms of diabetes?",
+         "What are the best books for personal development?",
+         "How does 5G technology impact daily life?",
+         "What are the career opportunities in data science?",
+         "What are the ethical concerns surrounding AI?"
     ],
     "url_to_check": [
-        "https://www.nasa.gov/mars-missions", "https://www.foodnetwork.com/best-desserts",
-        "https://www.worldbank.org/economic-growth", "https://www.fifa.com/world-cup-history",
-        "https://www.nobelprize.org/physics", "https://www.who.int/mental-health",
-        "https://www.medicalnewstoday.com/heart-health", "https://www.techcrunch.com/startups",
-        "https://www.bbc.com/history-world-war", "https://www.cnn.com/latest-tech"
+           "https://www.healthline.com/nutrition/plant-based-diet-guide",
+           "https://www.ibm.com/quantum-computing/what-is-quantum-computing",
+           "https://climate.nasa.gov/evidence/",
+           "https://www.investopedia.com/terms/b/blockchain.asp",
+           "https://www.duolingo.com/",
+           "https://www.diabetes.org/diabetes",
+           "https://jamesclear.com/book-summaries",
+           "https://www.qualcomm.com/news/onq/2020/01/10/what-5g-and-how-it-changing-everything",
+           "https://datasciencedegree.wisconsin.edu/data-science/what-do-data-scientists-do/",
+           "https://aiethicslab.com/"
     ]
 }
 
