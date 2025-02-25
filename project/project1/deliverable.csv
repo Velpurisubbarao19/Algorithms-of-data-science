@@ -1,0 +1,11 @@
+user_prompt,url_to_check,func_rating,custom_rating
+What are the benefits of a plant-based diet?,https://www.healthline.com/nutrition/plant-based-diet-guide,46.5,2
+How does quantum computing work?,https://www.ibm.com/quantum-computing/what-is-quantum-computing,49.0,2
+What are the causes of climate change?,https://climate.nasa.gov/evidence/,46.5,4
+Explain the basics of blockchain technology.,https://www.investopedia.com/terms/b/blockchain.asp,45.5,1
+How can I learn a new language quickly?,https://www.duolingo.com/,25.0,4
+What are the symptoms of diabetes?,https://www.diabetes.org/diabetes,38.5,3
+What are the best books for personal development?,https://jamesclear.com/book-summaries,46.0,3
+How does 5G technology impact daily life?,https://www.qualcomm.com/news/onq/2020/01/10/what-5g-and-how-it-changing-everything,25.0,1
+What are the career opportunities in data science?,https://datasciencedegree.wisconsin.edu/data-science/what-do-data-scientists-do/,45.5,1
+What are the ethical concerns surrounding AI?,https://aiethicslab.com/,54.0,2
